@@ -1,0 +1,36 @@
+require('util')
+cal();
+function cal()
+{
+   var argv = getMonthYear();
+
+   var month = Number(argv) - 1;
+   var year = Number(argv);
+   offset = computeOffset(month, year);
+   printCal(month, year);
+}
+var calendar = [
+  ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA',],
+  ['..','..','..','..','..','..','..',],
+  ['..','..','..','..','..','..','..',],
+  ['..','..','..','..','..','..','..',],
+  ['..','..','..','..','..','..','..',],
+  ['..','..','..','..','..','..','..',],
+  ['..','..','..','..','..','..','..',],
+];
+month
+function getMonthYear()
+{
+  var argv = process.argv.slice(2);
+  }
+function printCal(month, year)
+{
+  var week_day = getWeekDay(month, year);
+  var month_days = getMonthDays(month. year);
+
+}
+
+/*function computeOffset(m, y)
+{
+
+}*/
